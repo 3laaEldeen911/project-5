@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery</title>
+    <!-- css file -->
+<link rel="stylesheet" href="assets/Css/style.css"> 
+<!-- icon file -->
+<link rel="stylesheet" href="assets/Css/all.min.css">
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- start_header -->
+    <header class="header container    ">
+        <div class="logo"><img src="assets/img/bakery-light-1 (1).png" alt=""></div>
+        <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list" id="nav-list">
+                <li>
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#our_offer" class="nav-link">Our Offer</a>
+                </li>
+                <li>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li>
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end_header -->
+
+    <!-- start Hero section  -->
+    <section class="landing">
+    <div class="text container">
+        <div class="content">
+            <div class="welcom"><p>Welcome to</p></div>
+            <div class="title"><h1>Family Backer</h1></div>
+            <div class="pargraph"><p>  
+                We're the biggest, 
+                best equipped and most advanced Bakery 
+                in the greater Los Angeles area.</p></div>
+            </div>
+            <div class="buttons">
+                <div class="primary_key"><a href="">Learn More</a></div>
+                <div class="second_key"><a href="">Contact</a></div> 
+            </div>
+            <div class="scroll_key "><a class="" href="#information"></a></div>
+        </div>
+    </section>
+    <!-- end hero section -->
+    <!-- start information  section -->
+    <section class="info container" id="information">
+        <div class="pic1">
+            <img src="assets/img/pic1.jpg" alt="">
+        </div>
+        <div class="information"  >
+            <h2>who we are ?</h2>
+            <p>We have been operating for
+            over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme.
+            Everyday it make our lives better.</p>
+            <div class="icon"><i class="fa-brands fa-envira"></i><span>We care about environment.</span></div>
+            <div class="icon"> <i class="fa-solid fa-users"></i>
+            <span>We are trusted by hundreds of clients.</span>
+        </div>
+        <div class="icon"><i class="fa-solid fa-heart"></i>
+        <span>Social media loves us!</span></div>
+        <div class="icon"><i class="fa-solid fa-check"></i>
+            <span>This list is super easy to create.</span></div>
+        </div>
+    </section>
+    <!-- end information  section -->
+    <!-- strat location section -->
+    <section class="location_section">
+        <div class="location_information container">
+            <div class="location_info">
+                <h2>Our Location</h2>
+                <p class="frist_location_parg">We have been operating for over 30 years and are Members of The Federation of Master Builders. We work on projects big and small from small residential extensions to full house. We are so happy with this theme.
+                Everyday it make our lives better.</p>
+                <p class="second_location_parg">Story on projects big and small from small residential extensions to full house. We are so happy with this theme.
+                Everyday it make our lives better.</p>
+            </div>
+            <div class="pic2"><img src="assets/img/pic2.jpg" alt=""></div>
+        </div>
+    </section>
+    <!-- end location section -->
+    <!-- start menu section -->
+    <section class="menu container">
+        <div class="intro_menu">
+            <h3>Our Baking</h3>
+        <p>Learn more about them.
+             We have worked truly hard to make them perfect for every use.</p>
+            </div>
+            <div class="food_card">
+                <div class="food">
+                    <img src="assets/img/pic3-1.jpg" alt="">
+                    <h4>Superior Breads</h4>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit.
+                         Phasellus commodo turpis et lacinia posuere.</p>
+                </div>
+                <div class="food">
+                    <img src="assets/img/pic3-2.jpg" alt="">
+                    <h4>Bagels</h4>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. 
+                        Phasellus commodo turpis et lacinia posuere.</p>
+                    
+                </div>
+                <div class="food">
+                    <img src="assets/img/pic3-3.jpg" alt="">
+                    <h4>Cookies</h4>
+                    <p>Proin interdum, ante ut sollicitudin commodo, tellus quam sagittis libero, at semper mauris velit a velit. 
+                        Phasellus commodo turpis et lacinia posuere.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end menu section -->
+         <!-- copyright -->
+        <p class="name"> &copy; 3laa Eldeen</p>
+
+</body>
+<script>
+// Navbar toggle for mobile
+const navToggle = document.getElementById('nav-toggle');
+const navList = document.getElementById('nav-list');
+navToggle.addEventListener('click', function() {
+    navList.classList.toggle('active');
+    navToggle.classList.toggle('open');
+});
+// Optional: Close menu when a link is clicked (mobile UX)
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if(window.innerWidth <= 900) {
+            navList.classList.remove('active');
+            navToggle.classList.remove('open');
+        }
+    });
+});
+</script>
+</html>
