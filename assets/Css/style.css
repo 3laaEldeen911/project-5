@@ -335,6 +335,12 @@ font-size: 30px;
     top: 30px;
     z-index: 200;
   }
+  .location_section .location_information .pic2 img {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 /* Hide nav-toggle by default */
